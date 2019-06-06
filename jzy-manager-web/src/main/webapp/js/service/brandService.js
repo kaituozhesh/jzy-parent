@@ -13,7 +13,7 @@ app.service('brandService', function ($http) {
         return $http.post('/brand/add.do', entity);
     };
     this.update = function (entity) {
-        return $http.post('/brand/updata.do', entity);
+        return $http.post('/brand/update.do', entity);
     };
     this.dele = function (ids) {
         return $http.get('/brand/delete.do?ids=' + ids);
