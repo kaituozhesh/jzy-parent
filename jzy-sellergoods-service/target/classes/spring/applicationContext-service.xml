@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 扫描注解 -->
+    <context:component-scan base-package="cn.jzy.sellergoods.service"></context:component-scan>
+    <!-- 加载属性文件 -->
+    <context:property-placeholder location="classpath:db.properties"/>
+    <!-- 数据库链接 -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+    <!-- 创建SqlSessionFactory -->
+    <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 全局的default-autowire所有可以省略不写 -->
+         <property name="dataSource" ref="dataSource"></property>
+
+        <!-- 对包下的类起别名 别名为类的收字母小写 -->
+        <property name="typeAliasesPackage" value="cn.jzy.pojo"></property>
+        <!-- 加载mybatis的全局配置文件 -->
+        <property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml" />
+    </bean>
+
+    <!-- 扫描接口，并创建接口对象 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="cn.jzy.mapper"></property>
+        <property name="sqlSessionFactoryBeanName" value="factory"></property>
+    </bean>
+
+    <!-- 事务管理器 -->
+    <bean id="txManage" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <dubbo:protocol name="dubbo" port="20881"></dubbo:protocol>
+
+	<dubbo:application name="jzy-sellergoods-service"/>
+    <dubbo:registry address="zookeeper://192.168.25.131:2181"/>
+    <dubbo:annotation package="cn.jzy.sellergoods.service.impl" />
+</beans>

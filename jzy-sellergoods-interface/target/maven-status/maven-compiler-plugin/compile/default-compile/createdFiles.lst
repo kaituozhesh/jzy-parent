@@ -1,0 +1,9 @@
+cn\jzy\sellergoods\service\GoodsDescService.class
+cn\jzy\sellergoods\service\TypeTemplateService.class
+cn\jzy\sellergoods\service\SpecificationOptionService.class
+cn\jzy\sellergoods\service\SpecificationService.class
+cn\jzy\sellergoods\service\ItemCatService.class
+cn\jzy\sellergoods\service\BrandService.class
+cn\jzy\sellergoods\service\ItemService.class
+cn\jzy\sellergoods\service\SellerService.class
+cn\jzy\sellergoods\service\GoodsService.class

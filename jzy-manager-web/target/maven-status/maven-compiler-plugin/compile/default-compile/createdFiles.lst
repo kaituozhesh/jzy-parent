@@ -1,0 +1,10 @@
+cn\jzy\manager\controller\SpecificationController.class
+cn\jzy\manager\controller\GoodsController.class
+cn\jzy\manager\controller\SellerController.class
+cn\jzy\manager\controller\LoginController.class
+cn\jzy\manager\controller\SpecificationOptionController.class
+cn\jzy\manager\controller\ItemCatController.class
+cn\jzy\manager\controller\ItemController.class
+cn\jzy\manager\controller\BrandController.class
+cn\jzy\manager\controller\GoodsDescController.class
+cn\jzy\manager\controller\TypeTemplateController.class
