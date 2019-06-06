@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 品牌接口
  * @Auther: 林俊豪
- * @Date: 2019/4/12
+ * @Date: 2019/6/6
  */
 public interface BrandService {
     /**
