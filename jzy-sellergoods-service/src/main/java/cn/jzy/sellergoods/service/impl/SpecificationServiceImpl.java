@@ -56,6 +56,7 @@ public class SpecificationServiceImpl implements SpecificationService {
 	public void add(Specification specification) {
         //获取规格实体
         TbSpecification tbspecification = specification.getSpecification();
+        // insert 做了主键生成  所以tbspecification
         specificationMapper.insert(tbspecification);
         //获取规格选项集合
         List<TbSpecificationOption> specificationOptionList = specification.getSpecificationOptionList();
@@ -76,7 +77,7 @@ public class SpecificationServiceImpl implements SpecificationService {
         TbSpecification tbspecification = specification.getSpecification();
         specificationMapper.updateByPrimaryKey(tbspecification);
 
-        // 删除原来规格对应的规格选项
+        // 删除原来规格对应的所有规格选项
         TbSpecificationOptionExample example = new TbSpecificationOptionExample();
         TbSpecificationOptionExample.Criteria criteria = example.createCriteria();
         criteria.andSpecIdEqualTo(tbspecification.getId());
@@ -97,6 +98,7 @@ public class SpecificationServiceImpl implements SpecificationService {
 	 */
 	@Override
 	public Specification findOne(Long id){
+	    // 创建规格组合实体
         Specification specification = new Specification();
         specification.setSpecification(specificationMapper.selectByPrimaryKey(id)); // 获取规格实体
         // 根据id查询

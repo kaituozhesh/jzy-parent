@@ -9,12 +9,14 @@ import java.util.List;
 /**
  * @Auther: 林俊豪
  * @Date: 2019/4/13
+ * 规格组合实体类
  */
 public class Specification  implements Serializable {
 
     private TbSpecification specification;
 
     private List<TbSpecificationOption> specificationOptionList;
+
 
     public TbSpecification getSpecification() {
         return specification;

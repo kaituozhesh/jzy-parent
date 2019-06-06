@@ -10,7 +10,7 @@ app.controller('specificationController' ,function($scope,$controller   ,specifi
 				$scope.list=response;
 			}			
 		);
-	}    
+	};
 	
 	//分页
 	$scope.findPage=function(page,rows){			
@@ -20,7 +20,7 @@ app.controller('specificationController' ,function($scope,$controller   ,specifi
 				$scope.paginationConf.totalItems=response.total;//更新总记录数
 			}			
 		);
-	}
+	};
 	
 	//查询实体 
 	$scope.findOne=function(id){				
@@ -29,12 +29,12 @@ app.controller('specificationController' ,function($scope,$controller   ,specifi
 				$scope.entity= response;					
 			}
 		);				
-	}
-	
-	//保存 
+	};
+
+ 	//保存
 	$scope.save=function(){				
 		var serviceObject;//服务层对象  				
-		if($scope.entity.id!=null){//如果有ID
+		if($scope.entity.specification.id!=null){//如果有ID
 			serviceObject=specificationService.update( $scope.entity ); //修改  
 		}else{
 			serviceObject=specificationService.add( $scope.entity  );//增加 
@@ -49,7 +49,7 @@ app.controller('specificationController' ,function($scope,$controller   ,specifi
 				}
 			}		
 		);				
-	}
+	};
 	
 	 
 	//批量删除 
@@ -63,7 +63,7 @@ app.controller('specificationController' ,function($scope,$controller   ,specifi
 				}						
 			}		
 		);				
-	}
+	};
 	
 	$scope.searchEntity={};//定义搜索对象 
 	
@@ -75,6 +75,16 @@ app.controller('specificationController' ,function($scope,$controller   ,specifi
 				$scope.paginationConf.totalItems=response.total;//更新总记录数
 			}			
 		);
-	}
-    
+	};
+
+	// 增加表格行
+	$scope.addTableRow = function () {
+	    // entity  包括  规格对象   和   规格列表集合
+        $scope.entity.specificationOptionList.push({});  // 在这里push进集合对象的时候会出错  出现undifind
+    };
+
+	// 删除规格选项行
+    $scope.deleTableRow =  function (index) {
+        $scope.entity.specificationOptionList.splice(index, 1);
+    }
 });	
