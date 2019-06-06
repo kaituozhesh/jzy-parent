@@ -12,101 +12,18 @@
     <script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- 携带分页插件的模板 -->
     <script type="text/javascript" src="/plugins/angularjs/angular.min.js"></script>
+
 
     <!-- 分页组件开始 -->
     <script src="/plugins/angularjs/pagination.js"></script>
     <link rel="stylesheet" href="/plugins/angularjs/pagination.css">
     <!-- 分页组件结束 -->
 
-
-    <script type="text/javascript">
-        // 引入分页插件的模块 pagination
-        var app = angular.module('jzy', ['pagination']);
-        app.controller('brandController', function ($scope, $http) {
-            $scope.findAll = function () {
-                $http.get("/brand/findAll.do").success(function (response) {
-                    $scope.list = response;
-                })
-            };
-
-            $scope.paginationConf = {
-                currentPage: 1,  // 当前页码
-                totalItems: 10,  // 总记录数
-                itemsPerPage: 10, // 每页记录数
-                perPageOptions: [10, 20, 30, 40, 50], // 每页选项
-                onChange: function(){ // 当页码变更后 自动触发的方法
-                    $scope.reloadList(); // 页面加载的时候  分页插件就会自动加载
-                }
-            };
-
-            // 刷新列表
-            $scope.reloadList =function(){
-                $scope.search($scope.paginationConf.currentPage, $scope.paginationConf.itemsPerPage); // 重新加载
-            };
-            // 去后端查询数据
-            $scope.findPage=function (page, size) {
-                $http.get('/brand/findPage.do?page=' + page + '&size=' + size).success(function (response) {
-                    $scope.list = response.rows; // 当前页数据
-                    $scope.paginationConf.totalItems = response.total; // 更新总记录数
-                });
-            };
-
-            // 新增
-            $scope.save = function () {
-                var methodName = 'add'; // 方法名
-                if ($scope.entity.id != null){
-                    methodName = 'update';
-                }
-                $http.post("/brand/" + methodName + ".do", $scope.entity).success(function (response) {
-                    if (response.success){
-                        $scope.reloadList();  // 刷新页面
-                    } else {
-                        alert(response.message); // 提示添加错误
-                    }
-                })
-            };
-            // 根据id查询实体
-            $scope.findOne = function (id) {
-                $http.get('/brand/findOne.do?id=' + id).success(function (response) {
-                    $scope.entity = response;
-                })
-            };
-            // 用户勾选的ID集合
-            $scope.selectIds = [];
-            // 用户勾选复选框
-            $scope.updateSelection=function ($event, id) {
-                // push向集合添加元素
-                if($event.target.checked){
-                    $scope.selectIds.push(id);
-                } else {
-                    // 查找值的位置
-                    var index = $scope.selectIds.indexOf(id);
-                    // 参数1  移除的位置, 参数2 : 移除的个数
-                    $scope.selectIds.splice(index, 1);
-                }
-            };
-            // 删除
-            $scope.dele = function () {
-                $http.get('/brand/delete.do?ids=' + $scope.selectIds).success(function (response) {
-                    if (response.success){
-                        $scope.reloadList();
-                    } else {
-                        alert(response.message);
-                    }
-                })
-            };
-            $scope.searchEntity = {};
-            // 条件查询
-            $scope.search = function (page, size) {
-                $http.post('/brand/search.do?page=' + page + '&size=' + size, $scope.searchEntity).success(function (response) {
-                    $scope.list = response.rows; // 当前页数据
-                    $scope.paginationConf.totalItems = response.total; // 更新总记录数
-                });
-            }
-        })
-
-    </script>
+    <script type="text/javascript" src="/js/base_pagination.js"></script>
+    <script type="text/javascript" src="/js/controller/brandController.js"></script>
+    <script type="text/javascript" src="/js/service/brandService.js"></script>
 
 </head>
 <body class="hold-transition skin-red sidebar-mini" ng-app="jzy" ng-controller="brandController">
