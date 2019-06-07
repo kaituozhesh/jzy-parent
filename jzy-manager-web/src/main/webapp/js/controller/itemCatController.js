@@ -37,28 +37,30 @@ app.controller('itemCatController' ,function($scope,$controller   ,itemCatServic
 		if($scope.entity.id!=null){//如果有ID
 			serviceObject=itemCatService.update( $scope.entity ); //修改  
 		}else{
+            $scope.entity.parentId=$scope.parentId;
 			serviceObject=itemCatService.add( $scope.entity  );//增加 
 		}				
 		serviceObject.success(
 			function(response){
 				if(response.success){
 					//重新查询 
-		        	$scope.reloadList();//重新加载
+                    $scope.findByParentId($scope.parentId);
 				}else{
 					alert(response.message);
 				}
 			}		
 		);				
 	}
-	
-	 
+
+    $scope.parentId=0; // 记录当前上级id 默认为0
 	//批量删除 
-	$scope.dele=function(){			
+	$scope.dele = function(){
 		//获取选中的复选框			
 		itemCatService.dele( $scope.selectIds ).success(
 			function(response){
 				if(response.success){
-					$scope.reloadList();//刷新列表
+                    $scope.findByParentId($scope.parentId);
+					// $scope.reloadList();//刷新列表
 					$scope.selectIds=[];
 				}						
 			}		
@@ -75,6 +77,34 @@ app.controller('itemCatController' ,function($scope,$controller   ,itemCatServic
 				$scope.paginationConf.totalItems=response.total;//更新总记录数
 			}			
 		);
-	}
+	};
+
+	// 根据上级分类ID查询列表
+	$scope.findByParentId = function (parentId) {
+        itemCatService.findByParentId(parentId).success(function (response) {
+            $scope.list = response;
+            $scope.parentId=parentId; // 设置当前分类上级ID
+        })
+    };
+
+	// 当前级别
+	$scope.grade = 1;
+	// 设置级别
+	$scope.setGrade = function (value) {
+        $scope.grade = value;
+    };
+	$scope.selectList = function (p_entity) {
+        if ($scope.grade == 1){
+            $scope.entity_1 = null;
+            $scope.entity_2 = null;
+        } else if ($scope.grade == 2){
+            $scope.entity_1 = p_entity;
+            $scope.entity_2 = null;
+        } else if ($scope.grade == 3) {
+            $scope.entity_2 = p_entity;
+        }
+        $scope.findByParentId(p_entity.id);
+    }
+
     
 });	

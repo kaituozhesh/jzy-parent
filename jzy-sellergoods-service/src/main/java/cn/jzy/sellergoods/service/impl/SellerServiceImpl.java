@@ -49,8 +49,7 @@ public class SellerServiceImpl implements SellerService {
 	public void add(TbSeller seller) {
 	    seller.setStatus("0"); // 状态
 	    seller.setCreateTime(new Date());  // 申请时间
-
-		sellerMapper.insert(seller);		
+		sellerMapper.insert(seller);
 	}
 
 	

@@ -1,0 +1,5 @@
+cn\jzy\shop\controller\SellerController.class
+cn\jzy\shop\controller\GoodsController.class
+cn\jzy\shop\controller\UploadController.class
+cn\jzy\service\UserDetailServiceImpl.class
+cn\jzy\shop\controller\LoginController.class

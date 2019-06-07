@@ -20,7 +20,7 @@ app.controller('typeTemplateController' ,function($scope,$controller   ,typeTemp
                 $scope.paginationConf.totalItems=response.total;//更新总记录数
             }
         );
-    }
+    };
 
     //查询实体
     $scope.findOne=function(id){

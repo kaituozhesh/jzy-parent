@@ -49,7 +49,7 @@ app.controller('goodsController' ,function($scope,$controller   ,goodsService){
 				}
 			}		
 		);				
-	}
+	};
 	
 	 
 	//批量删除 

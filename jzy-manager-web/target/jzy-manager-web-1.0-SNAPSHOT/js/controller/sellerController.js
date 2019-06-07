@@ -75,6 +75,16 @@ app.controller('sellerController' ,function($scope,$controller   ,sellerService)
 				$scope.paginationConf.totalItems=response.total;//更新总记录数
 			}			
 		);
-	}
-    
+	};
+	// 更改状态
+	$scope.updateStatus = function (sellerId, status) {
+	    alert(sellerId + "" + status);
+        sellerService.updateStatus(sellerId, status).success(function (response) {
+            if (response.success){
+                $scope.reloadList();
+            } else {
+                alert(response.message);
+            }
+        })
+    }
 });	

@@ -68,8 +68,8 @@
         </div>
         <div class="box-tools pull-right">
             <div class="has-feedback">
-                分类模板名称：<input>
-                <button class="btn btn-default">查询</button>
+                分类模板名称：<input ng-model="searchEntity.name">
+                <button class="btn btn-default" ng-click="reloadList()">查询</button>
             </div>
         </div>
         <!--工具栏/-->
@@ -155,14 +155,14 @@
                             <table class="table table-bordered table-striped" width="800px">
                                 <thead>
                                 <tr>
-                                    <td><input type="checkbox" class="icheckbox_square-blue"></td>
+                                    <!--<td><input type="checkbox" class="icheckbox_square-blue"></td>-->
                                     <td>属性名称</td>
                                     <td>操作</td>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr ng-repeat="pojo in entity.customAttributeItems">
-                                    <td><input type="checkbox" class="icheckbox_square-blue"></td>
+                                    <!--<td><input type="checkbox" class="icheckbox_square-blue"></td>-->
                                     <td><input class="form-control" placeholder="属性名称" ng-model="pojo.text"></td>
                                     <td>
                                         <button type="button" class="btn btn-default" title="删除" ng-click="deleTableRow($index)"><i

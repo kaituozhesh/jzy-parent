@@ -30,11 +30,9 @@
         <property name="maxUploadSize" value="5242880"></property>
     </bean>
 
-
-
 	<!-- 引用dubbo 服务 -->
 	<dubbo:application name="jzy-shop-web" />
-	<dubbo:registry address="zookeeper://192.168.25.131:2181"/>
+	<dubbo:registry address="zookeeper://192.168.25.132:2181"/>
 	<dubbo:annotation package="cn.jzy.shop.controller" />
 
 </beans>
