@@ -94,7 +94,6 @@ public class GoodsServiceImpl implements GoodsService {
             item.setIsDefault("1"); // 是否默认
             item.setSpec("{}"); // 规格
             setItemValues(item, goods);
-
             itemMapper.insert(item);
         }
     }
@@ -121,8 +120,6 @@ public class GoodsServiceImpl implements GoodsService {
             item.setImage((String) imagesList.get(0).get("url"));
         }
     }
-
-
 
     /**
      * 修改
