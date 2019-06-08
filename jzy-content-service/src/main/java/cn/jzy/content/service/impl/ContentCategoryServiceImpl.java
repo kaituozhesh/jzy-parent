@@ -1,16 +1,16 @@
 package cn.jzy.content.service.impl;
-import java.util.List;
 
+import cn.jzy.content.service.ContentCategoryService;
+import cn.jzy.mapper.TbContentCategoryMapper;
+import cn.jzy.pojo.TbContentCategory;
 import cn.jzy.pojo.TbContentCategoryExample;
-import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import cn.jzy.mapper.TbContentCategoryMapper;
-import cn.jzy.pojo.TbContentCategory;
-import cn.jzy.content.service.ContentCategoryService;
-
 import entity.PageResult;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 /**
  * 服务实现层
@@ -93,7 +93,7 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 	
 		}
 		
-		Page<TbContentCategory> page= (Page<TbContentCategory>)contentCategoryMapper.selectByExample(example);		
+		Page<TbContentCategory> page= (Page<TbContentCategory>)contentCategoryMapper.selectByExample(example);
 		return new PageResult(page.getTotal(), page.getResult());
 	}
 	
