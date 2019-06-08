@@ -66,7 +66,7 @@ public interface GoodsService {
      * @param ids
      * @param status
      */
-	void updateStatus(Long[] ids, String status);
+	void updateStatus(Long[] ids, String status,boolean flag);
 
 
 }

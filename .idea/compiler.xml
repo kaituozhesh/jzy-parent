@@ -7,9 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jzy-common" />
+        <module name="jzy-content-interface" />
+        <module name="jzy-content-service" />
         <module name="jzy-dao" />
         <module name="jzy-manager-web" />
         <module name="jzy-pojo" />
+        <module name="jzy-portal-web" />
         <module name="jzy-sellergoods-interface" />
         <module name="jzy-sellergoods-service" />
         <module name="jzy-shop-web" />

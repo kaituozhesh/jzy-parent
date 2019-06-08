@@ -11,6 +11,6 @@
     <dubbo:protocol name="dubbo" port="20881"></dubbo:protocol>
 
 	<dubbo:application name="jzy-sellergoods-service"/>
-    <dubbo:registry address="zookeeper://192.168.25.132:2181"/>
+    <dubbo:registry address="zookeeper://192.168.25.134:2181"/>
     <dubbo:annotation package="cn.jzy.sellergoods.service.impl" />
 </beans>

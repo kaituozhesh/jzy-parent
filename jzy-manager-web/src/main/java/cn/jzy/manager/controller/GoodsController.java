@@ -101,7 +101,7 @@ public class GoodsController {
 	@RequestMapping("/updateStatus")
     public Result updateStatus(Long[] ids, String status) {
         try {
-            goodsService.updateStatus(ids,status);
+            goodsService.updateStatus(ids,status,false);
             return new Result(true,"成功");
         } catch (Exception e) {
             e.printStackTrace();

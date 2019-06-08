@@ -16,6 +16,9 @@
         <module>jzy-sellergoods-service</module>
         <module>jzy-manager-web</module>
         <module>jzy-shop-web</module>
+        <module>jzy-content-interface</module>
+        <module>jzy-content-service</module>
+        <module>jzy-portal-web</module>
     </modules>
 
     <!-- 集中定义依赖版本号 -->

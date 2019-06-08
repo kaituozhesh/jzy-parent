@@ -2,26 +2,93 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4c89ff-3b3a-47df-aa13-b215018faf88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/ItemCatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/TypeTemplateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/itemCatService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/typeTemplateService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-content-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-content-interface/src/main/java/cn/jzy/content/service/ContentCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-content-interface/src/main/java/cn/jzy/content/service/ContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-content-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-content-service/src/main/java/cn/jzy/content/service/impl/ContentCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-content-service/src/main/java/cn/jzy/content/service/impl/ContentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-content-service/src/main/resources/spring/applicationContext-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-content-service/src/main/resources/spring/applicationContext-tx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-content-service/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/ContentCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/ContentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/resources/config/fdfs_client.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/goods_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/contentCategoryController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/contentController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/contentCategoryService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/contentService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/uploadService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-portal-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-portal-web/src/main/resources/config/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-portal-web/src/main/resources/spring/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-portal-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-tx.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-common/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-dao/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-dao/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/src/main/resources/config/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/resources/config/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/src/main/resources/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/resources/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/content_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/contentCategory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/goods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/goodsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/goodsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/goodsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/goodsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/typeTemplateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/typeTemplateService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/classes/config/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/classes/config/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/classes/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/classes/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/admin/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/admin/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/admin/content_category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/admin/goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/admin/goods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/js/controller/goodsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/js/controller/goodsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/js/service/goodsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/js/service/goodsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/js/service/typeTemplateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/jzy-manager-web-1.0-SNAPSHOT/js/service/typeTemplateService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-pojo/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-pojo/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-interface/src/main/java/cn/jzy/sellergoods/service/TypeTemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-interface/src/main/java/cn/jzy/sellergoods/service/TypeTemplateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-interface/src/main/java/cn/jzy/sellergoods/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-interface/src/main/java/cn/jzy/sellergoods/service/GoodsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-sellergoods-interface/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-interface/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsDescServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsDescServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemCatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemCatServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SellerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SellerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SpecificationOptionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SpecificationOptionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SpecificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SpecificationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/TypeTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/TypeTemplateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/target/classes/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/target/classes/spring/applicationContext-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/target/jzy-sellergoods-service-1.0-SNAPSHOT/WEB-INF/classes/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/target/jzy-sellergoods-service-1.0-SNAPSHOT/WEB-INF/classes/spring/applicationContext-service.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/goods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/goods_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/goods_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/goodsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/goodsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/goodsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/goodsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/classes/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/classes/spring/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/classes/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/classes/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/admin/goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/admin/goods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/admin/goods_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/admin/goods_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/js/controller/goodsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/js/controller/goodsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/js/service/goodsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/jzy-shop-web-1.0-SNAPSHOT/js/service/goodsService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/tomcat/logs/access_log.2019-06-08" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/tomcat/logs/access_log.2019-06-08" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/tomcat/logs/access_log.2019-06-08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,6 +99,9 @@
     <ignored path="$PROJECT_DIR$/jzy-sellergoods-service/target/" />
     <ignored path="$PROJECT_DIR$/jzy-manager-web/target/" />
     <ignored path="$PROJECT_DIR$/jzy-shop-web/target/" />
+    <ignored path="$PROJECT_DIR$/jzy-content-interface/target/" />
+    <ignored path="$PROJECT_DIR$/jzy-content-service/target/" />
+    <ignored path="$PROJECT_DIR$/jzy-portal-web/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,59 +110,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/typeTemplateService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/goodsController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4100">
-              <caret line="205" column="5" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/GoodsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="102" column="31" lean-forward="true" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/goods_edit.html">
+        <entry file="file://$PROJECT_DIR$/jzy-portal-web/src/main/resources/spring/springmvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="311" column="25" lean-forward="true" selection-start-line="311" selection-start-column="25" selection-end-line="311" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/itemCatService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+            <state relative-caret-position="560">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -115,6 +137,9 @@
       <find>注销</find>
       <find>itemCat</find>
       <find>add</find>
+      <find>img</find>
+      <find>findSpecList</find>
+      <find>typeTemplateId</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,57 +148,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/typeTemplateController.js" />
-        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/TypeTemplateServiceImpl.java" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/type_template.html" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/pom.xml" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/login.html" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/specification.html" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/indexController.js" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/loginService.js" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/resources/spring/spring-security.xml" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/index.html" />
-        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-service.xml" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/resources/spring/springmvc.xml" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/sellerService.js" />
-        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SellerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/sellerController.js" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/register.html" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/sellerService.js" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/seller_1.html" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/sellerController.js" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/shoplogin.html" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/service/UserDetailServiceImpl.java" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/SellerController.java" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/spring-security.xml" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/index.html" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/indexController.js" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/itemCatService.js" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/itemCatController.js" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/item_cat.html" />
-        <option value="$PROJECT_DIR$/jzy-dao/src/main/resources/cn/jzy/mapper/TbGoodsMapper.xml" />
-        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/goodsController.js" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/goodsService.js" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/GoodsController.java" />
-        <option value="$PROJECT_DIR$/jzy-common/pom.xml" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/pom.xml" />
-        <option value="$PROJECT_DIR$/jzy-common/src/main/java/util/CookieUtil.java" />
         <option value="$PROJECT_DIR$/jzy-shop-web/src/main/resources/config/application.properties" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/UploadController.java" />
         <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/uploadService.js" />
         <option value="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/ItemCatController.java" />
         <option value="$PROJECT_DIR$/jzy-sellergoods-interface/src/main/java/cn/jzy/sellergoods/service/TypeTemplateService.java" />
         <option value="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/TypeTemplateController.java" />
         <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/typeTemplateService.js" />
-        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/goodsController.js" />
         <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/itemCatService.js" />
         <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/goods_edit.html" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/goods_edit.html" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/typeTemplateService.js" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/goodsController.js" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/goodsService.js" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/goods.html" />
+        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/goods.html" />
+        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/goodsController.js" />
+        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/goodsService.js" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-interface/src/main/java/cn/jzy/sellergoods/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemCatServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsDescServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SellerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SpecificationOptionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SpecificationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/TypeTemplateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/spring-security.xml" />
+        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/jzy-content-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/jzy-content-service/pom.xml" />
+        <option value="$PROJECT_DIR$/jzy-content-service/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/jzy-content-interface/src/main/java/cn/jzy/content/service/ContentCategoryService.java" />
+        <option value="$PROJECT_DIR$/jzy-content-service/src/main/java/cn/jzy/content/service/impl/ContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/ContentController.java" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/index.html" />
+        <option value="$PROJECT_DIR$/jzy-content-service/src/main/java/cn/jzy/content/service/impl/ContentCategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/contentCategory.html" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/pom.xml" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/resources/config/application.properties" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/contentController.js" />
+        <option value="$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/content.html" />
+        <option value="$PROJECT_DIR$/jzy-portal-web/pom.xml" />
+        <option value="$PROJECT_DIR$/jzy-portal-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/jzy-portal-web/src/main/resources/config/application.properties" />
+        <option value="$PROJECT_DIR$/jzy-portal-web/src/main/resources/spring/springmvc.xml" />
       </list>
     </option>
   </component>
@@ -208,10 +233,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="264" />
+    <option name="y" value="41" />
+    <option name="width" value="1279" />
+    <option name="height" value="909" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -219,8 +244,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,99 +256,63 @@
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-portal-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-portal-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-manager-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-portal-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-portal-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-portal-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-portal-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-portal-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-sellergoods-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-sellergoods-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-sellergoods-service" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-portal-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-sellergoods-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-sellergoods-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -349,26 +338,7 @@
               <item name="jzy-shop-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-shop-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-shop-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -385,36 +355,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-shop-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-shop-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-shop-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -425,7 +366,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559977024569" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560007531512" />
     <property name="last_opened_file_path" value="D:/temp/poject/JZY/jzy-parent" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -435,18 +376,19 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\JZY\jzy-parent\jzy-shop-web\src\main\webapp\js\service" />
-      <recent name="D:\project\JZY\jzy-parent\jzy-shop-web\src\main\webapp\js\controller" />
-      <recent name="D:\project\JZY\jzy-parent\jzy-shop-web\src\main\resources\config" />
-      <recent name="D:\project\JZY\jzy-parent\jzy-common\src\main\java" />
-      <recent name="D:\project\JZY\jzy-parent\jzy-shop-web\src\main\resources\spring" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.jzy.shop.controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\project\JZY\jzy-parent\jzy-dao\src\main\resources\spring" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.jzy.manager.controller" />
+      <recent name="cn.jzy.shop.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\JZY\jzy-parent\jzy-portal-web\src\main\resources" />
+      <recent name="D:\project\JZY\jzy-parent\jzy-portal-web\src\main\webapp\WEB-INF" />
+      <recent name="D:\project\JZY\jzy-parent\jzy-manager-web\src\main\resources\config" />
+      <recent name="D:\project\JZY\jzy-parent\jzy-manager-web\src\main\webapp\js\service" />
+      <recent name="D:\project\JZY\jzy-parent\jzy-manager-web\src\main\webapp\admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -461,7 +403,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.jzy-shop-web">
+  <component name="RunManager" selected="Maven.jzy-manager-web">
+    <configuration name="jzy-content-service" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/jzy-content-service" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="jzy-manager-web" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -539,6 +506,7 @@
     </configuration>
     <list>
       <item itemvalue="Maven.jzy-sellergoods-service" />
+      <item itemvalue="Maven.jzy-content-service" />
       <item itemvalue="Maven.jzy-manager-web" />
       <item itemvalue="Maven.jzy-shop-web" />
     </list>
@@ -558,18 +526,19 @@
       <workItem from="1559867756538" duration="9282000" />
       <workItem from="1559883075989" duration="590000" />
       <workItem from="1559885207872" duration="24502000" />
-      <workItem from="1559954555506" duration="12537000" />
+      <workItem from="1559954555506" duration="22815000" />
+      <workItem from="1559993857260" duration="4658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72737000" />
+    <option name="totallyTimeSpent" value="87673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16204691" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18603411" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -579,8 +548,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19616205" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.031982943" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39946738" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -588,14 +557,14 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3293979" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.1098081" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.08528785" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.13113007" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -641,328 +610,339 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/spring-security.xml">
+    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/goodsService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/loginService.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/loginService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="40" column="121" selection-start-line="40" selection-start-column="108" selection-end-line="40" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="41" column="122" selection-start-line="41" selection-start-column="122" selection-end-line="41" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/BrandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-interface/src/main/java/cn/jzy/sellergoods/service/ItemCatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-644">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-724">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemCatServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1344">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/ItemCatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1384">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/itemCatService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/baseController.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/itemCatController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="63" column="36" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/item_cat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-dao/src/main/resources/cn/jzy/mapper/TbGoodsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="106" column="36" lean-forward="true" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-pojo/src/main/java/cn/jzy/pojogroup/Goods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="668">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jzy-sellergoods-interface/src/main/java/cn/jzy/sellergoods/service/GoodsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/GoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1000">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/goodsService.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/goodsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/brand.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="25" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/goods.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/goodsService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1201">
-          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-common/src/main/java/util/HttpClient.java" />
-    <entry file="file://$PROJECT_DIR$/jzy-common/src/main/java/util/PhoneFormatCheckUtils.java" />
-    <entry file="file://$PROJECT_DIR$/jzy-common/src/main/java/util/IdWorker.java" />
-    <entry file="file://$PROJECT_DIR$/jzy-common/src/main/java/util/CookieUtil.java" />
-    <entry file="file://$PROJECT_DIR$/jzy-common/src/main/java/util/FastDFSClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/resources/config/fdfs_client.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/resources/config/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/uploadService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/ItemCatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1491" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-interface/src/main/java/cn/jzy/sellergoods/service/TypeTemplateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-pojo/src/main/java/cn/jzy/pojo/TbTypeTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/TypeTemplateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/TypeTemplateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="105" column="15" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
-          <folding>
-            <element signature="e#2410#2411#0" expanded="true" />
-            <element signature="e#2448#2449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/baseController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/itemCatService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/service/typeTemplateService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/goodsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4100">
-          <caret line="205" column="5" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
+        <state relative-caret-position="548">
+          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/java/cn/jzy/shop/controller/GoodsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="102" column="31" lean-forward="true" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
+        <state relative-caret-position="424">
+          <caret line="129" column="13" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/admin/goods_edit.html">
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/GoodsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="311" column="25" lean-forward="true" selection-start-line="311" selection-start-column="25" selection-end-line="311" selection-end-column="25" />
+        <state relative-caret-position="494">
+          <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/GoodsDescServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SpecificationOptionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SpecificationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SellerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemCatServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/TypeTemplateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-tx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/resources/spring/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-dao/src/main/resources/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="123" column="12" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="123" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-content-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-content-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-content-service/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-content-service/src/main/resources/spring/applicationContext-tx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-content-service/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-content-interface/src/main/java/cn/jzy/content/service/ContentCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-content-service/src/main/java/cn/jzy/content/service/impl/ContentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/ContentCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/ContentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/contentCategoryService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/contentCategoryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="387" column="28" selection-start-line="387" selection-start-column="28" selection-end-line="387" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-content-service/src/main/java/cn/jzy/content/service/impl/ContentCategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="86" column="38" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/contentCategory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="119" column="34" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/java/cn/jzy/manager/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/resources/config/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/resources/config/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/resources/config/fdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/service/uploadService.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="24" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-shop-web/src/main/webapp/js/controller/goodsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="94" column="3" lean-forward="true" selection-start-line="94" selection-start-column="3" selection-end-line="105" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/contentController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="100" column="17" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-shop-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="130" column="12" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="130" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-portal-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="83" column="20" lean-forward="true" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-portal-web/src/main/resources/config/fdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-portal-web/src/main/resources/config/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-portal-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-portal-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1020,11 +1000,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|jzy-dao</last-edited>
+          <last-edited>jzy-shop-web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

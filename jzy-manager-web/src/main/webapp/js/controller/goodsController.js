@@ -1,5 +1,5 @@
  //控制层 
-app.controller('goodsController' ,function($scope,$controller   ,goodsService){	
+app.controller('goodsController' ,function($scope,$controller ,$location  ,goodsService,itemCatService,typeTemplateService){
 	
 	$controller('baseController',{$scope:$scope});//继承
 	
@@ -10,7 +10,7 @@ app.controller('goodsController' ,function($scope,$controller   ,goodsService){
 				$scope.list=response;
 			}			
 		);
-	}    
+	};
 	
 	//分页
 	$scope.findPage=function(page,rows){			
@@ -20,16 +20,30 @@ app.controller('goodsController' ,function($scope,$controller   ,goodsService){
 				$scope.paginationConf.totalItems=response.total;//更新总记录数
 			}			
 		);
-	}
-	
+	};
+    $scope.entity={ goodsDesc:{itemImages:[],specificationItems:[]}  };
 	//查询实体 
-	$scope.findOne=function(id){				
-		goodsService.findOne(id).success(
-			function(response){
-				$scope.entity= response;					
-			}
-		);				
-	}
+    $scope.findOne=function(){
+        var id = $location.search()['id'];
+        if (id == null) {
+            return ;
+        }
+        goodsService.findOne(id).success(
+            function(response){
+                $scope.entity= response;
+                // 商品图片
+                $scope.entity.goodsDesc.itemImages = JSON.parse($scope.entity.goodsDesc.itemImages);
+                // 扩展属性
+                $scope.entity.goodsDesc.customAttributeItems = JSON.parse($scope.entity.goodsDesc.customAttributeItems);
+                // 规格选择
+                $scope.entity.goodsDesc.specificationItems = JSON.parse($scope.entity.goodsDesc.specificationItems);
+                // 转换SKU列表中的规格对象
+                for (var i = 0 ; i < $scope.entity.itemList.length; i++){
+                    $scope.entity.itemList[i].spec = JSON.parse($scope.entity.itemList[i].spec);
+                }
+            }
+        );
+    };
 	
 	//保存 
 	$scope.save=function(){				
@@ -49,7 +63,7 @@ app.controller('goodsController' ,function($scope,$controller   ,goodsService){
 				}
 			}		
 		);				
-	};
+	}
 	
 	 
 	//批量删除 
@@ -76,5 +90,42 @@ app.controller('goodsController' ,function($scope,$controller   ,goodsService){
 			}			
 		);
 	}
+    $scope.status=['未审核','已审核','审核未通过','已关闭'];
+
+    $scope.itemCatList=[]; // 商品分类列表
+    $scope.findItemCatList=function () {
+        itemCatService.findAll().success(
+            function (response) {
+                for (var i = 0; i < response.length; i++){
+                    $scope.itemCatList[response[i].id]=response[i].name;
+                }
+            }
+        )
+    };
+
+    $scope.checkAttributeValue=function (specName,optionName) {
+        var items = $scope.entity.goodsDesc.specificationItems;
+        var object = $scope.searchObjectByKey(items,'attributeName',specName);
+        if (object != null){
+            if(object.attributeValue.indexOf(optionName) >= 0){ // 能够查询到规格选项
+                return true;
+            }
+        }
+        return false;
+    };
+
+    // 更新状态
+    $scope.updateStatus=function (status) {
+        goodsService.updateStatus($scope.selectIds,status).success(
+            function (response) {
+                if (response.success){
+                    $scope.reloadList();// 刷新页面
+                    $scope.selectIds=[];
+                }else {
+                    alert(response.message);
+                }
+            }
+        );
+    }
     
 });	

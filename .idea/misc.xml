@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/jzy-content-service" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/jzy-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-sellergoods-service" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-shop-web" />
   </component>

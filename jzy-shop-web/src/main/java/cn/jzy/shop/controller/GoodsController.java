@@ -71,7 +71,12 @@ public class GoodsController {
 	 */
 	@RequestMapping("/update")
 	public Result update(@RequestBody Goods goods){
-		try {
+        String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
+        Goods goods2 = goodsService.findOne(goods.getGoods().getId());
+        if (!goods2.getGoods().getSellerId().equals(sellerId) || goods.getGoods().getSellerId().equals(sellerId)){
+            return new Result(false, "非法操作");
+        }
+        try {
 			goodsService.update(goods);
 			return new Result(true, "修改成功");
 		} catch (Exception e) {
@@ -114,6 +119,8 @@ public class GoodsController {
 	 */
 	@RequestMapping("/search")
 	public PageResult search(@RequestBody TbGoods goods, int page, int rows  ){
+        String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
+        goods.setSellerId(sellerId);
 		return goodsService.findPage(goods, page, rows);		
 	}
 
@@ -121,7 +128,7 @@ public class GoodsController {
 	@RequestMapping("/updateStatus")
     public Result updateStatus(Long[] ids, String status) {
         try {
-            goodsService.updateStatus(ids,status);
+            goodsService.updateStatus(ids,status,true);
             return new Result(true,"成功");
         } catch (Exception e) {
             e.printStackTrace();

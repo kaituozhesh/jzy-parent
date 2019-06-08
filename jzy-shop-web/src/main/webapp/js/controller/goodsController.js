@@ -219,9 +219,10 @@ app.controller('goodsController' ,function($scope,$controller, $location   ,good
         return newList;
     };
 
-    /*$scope.status=['未审核','已审核','审核未通过','已关闭'];
+   $scope.status=['未审核','已审核','审核未通过','已关闭'];
 
     $scope.itemCatList=[]; // 商品分类列表
+    // 查询商品分类列表
     $scope.findItemCatList=function () {
         itemCatService.findAll().success(
             function (response) {
@@ -232,14 +233,27 @@ app.controller('goodsController' ,function($scope,$controller, $location   ,good
         )
     };
 
-    $scope.checkAttributeValue=function (specName,optionName) {
-        var items = $scope.entity.goodsDesc.specificationItems;
-        var object = $scope.searchObjectByKey(items,'attributeName',specName);
-        if (object != null){
-            if(object.attributeValue.indexOf(optionName) >= 0){ // 能够查询到规格选项
-                return true;
+   $scope.checkAttributeValue=function (specName,optionName) {
+         var items = $scope.entity.goodsDesc.specificationItems;
+         var object = $scope.searchObjectByKey(items,'attributeName',specName);
+         if (object != null){
+             if(object.attributeValue.indexOf(optionName) >= 0){ // 能够查询到规格选项
+                 return true;
+             }
+         }
+         return false;
+     };
+    // 更新状态
+    $scope.updateStatus=function (status) {
+        goodsService.updateStatus($scope.selectIds,status).success(
+            function (response) {
+                if (response.success){
+                    $scope.reloadList();// 刷新页面
+                    $scope.selectIds=[];
+                }else {
+                    alert(response.message);
+                }
             }
-        }
-        return false;
-    }*/
+        );
+    }
 });

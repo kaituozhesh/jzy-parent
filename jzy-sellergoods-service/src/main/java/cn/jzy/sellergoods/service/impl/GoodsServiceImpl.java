@@ -10,6 +10,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import entity.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -21,6 +22,7 @@ import java.util.Map;
  * @author Administrator
  */
 @Service
+@Transactional
 public class GoodsServiceImpl implements GoodsService {
 
     @Autowired
@@ -62,7 +64,6 @@ public class GoodsServiceImpl implements GoodsService {
 
         goods.getGoods().setAuditStatus("0");// 状态 : 未审核
         goodsMapper.insert(goods.getGoods()); // 插入商品基本信息
-
         goods.getGoodsDesc().setGoodsId(goods.getGoods().getId()); // 将商品基本表的ID给商品扩展表
         goodsDescMapper.insert(goods.getGoodsDesc());
         // 插入SKU的商品数据
@@ -171,7 +172,9 @@ public class GoodsServiceImpl implements GoodsService {
     @Override
     public void delete(Long[] ids) {
         for (Long id : ids) {
-            goodsMapper.deleteByPrimaryKey(id);
+            TbGoods goods = goodsMapper.selectByPrimaryKey(id);
+            goods.setIsDelete("1");
+            goodsMapper.updateByPrimaryKey(goods);
         }
     }
 
@@ -182,7 +185,8 @@ public class GoodsServiceImpl implements GoodsService {
 
         TbGoodsExample example = new TbGoodsExample();
         TbGoodsExample.Criteria criteria = example.createCriteria();
-
+        // 指定条件为  未逻辑删除
+        criteria.andIsDeleteIsNull();
         if (goods != null) {
             if (goods.getSellerId() != null && goods.getSellerId().length() > 0) {
                 // criteria.andSellerIdLike("%" + goods.getSellerId() + "%");
@@ -216,12 +220,21 @@ public class GoodsServiceImpl implements GoodsService {
         return new PageResult(page.getTotal(), page.getResult());
     }
 
+    /**
+     * true 修改上下架    false 修改审核状态
+     * @param ids
+     * @param status
+     * @param flag
+     */
     @Override
-    public void updateStatus(Long[] ids, String status) {
-
+    public void updateStatus(Long[] ids, String status, boolean flag) {
         for(Long id : ids){
             TbGoods goods = goodsMapper.selectByPrimaryKey(id);
-            goods.setAuditStatus(status);
+            if (flag){
+                goods.setIsMarketable(status);
+            } else {
+                goods.setAuditStatus(status);
+            }
             goodsMapper.updateByPrimaryKey(goods);
         }
 
