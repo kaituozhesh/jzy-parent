@@ -1,6 +1,7 @@
 package cn.jzy.sellergoods.service.impl;
 
 import cn.jzy.mapper.TbItemCatMapper;
+import cn.jzy.pojo.TbItem;
 import cn.jzy.pojo.TbItemCat;
 import cn.jzy.pojo.TbItemCatExample;
 import cn.jzy.sellergoods.service.ItemCatService;
@@ -9,6 +10,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import entity.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -18,7 +20,7 @@ import java.util.List;
  * @author Administrator
  *
  */
-@Service
+@Service(timeout = 5000)
 @Transactional
 public class ItemCatServiceImpl implements ItemCatService {
 
@@ -108,6 +110,9 @@ public class ItemCatServiceImpl implements ItemCatService {
 		return new PageResult(page.getTotal(), page.getResult());
 	}
 
+	@Autowired
+	private RedisTemplate redisTemplate;
+
     /**
      * 根据上级id查询商品列表
      * @param parentId
@@ -117,7 +122,14 @@ public class ItemCatServiceImpl implements ItemCatService {
     public List<TbItemCat> findByParentId(Long parentId) {
         TbItemCatExample example = new TbItemCatExample();
         TbItemCatExample.Criteria criteria = example.createCriteria();
+        // 设置条件
         criteria.andParentIdEqualTo(parentId);
+        // 将模板id 放入缓存  (以商品分类名称作为key)
+        List<TbItemCat> itemCatList = findAll();
+        for (TbItemCat itemCat : itemCatList){
+            redisTemplate.boundHashOps("itemCat").put(itemCat.getName(),itemCat.getTypeId());
+        }
+        System.out.println("将模板ID放入缓存");
         return itemCatMapper.selectByExample(example);
     }
 

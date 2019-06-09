@@ -13,6 +13,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import entity.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -23,7 +24,7 @@ import java.util.Map;
  * @author Administrator
  *
  */
-@Service
+@Service(timeout = 5000)
 @Transactional
 public class TypeTemplateServiceImpl implements TypeTemplateService {
 
@@ -113,8 +114,31 @@ public class TypeTemplateServiceImpl implements TypeTemplateService {
 		}
 		
 		Page<TbTypeTemplate> page= (Page<TbTypeTemplate>)typeTemplateMapper.selectByExample(example);
+        // 缓存处理
+		saveToRedis();
+            System.out.println("xxx");
 		return new PageResult(page.getTotal(), page.getResult());
 	}
+
+	@Autowired
+	private RedisTemplate redisTemplate;
+
+    /**
+     * 将品牌列表和规格列表放入缓存
+     */
+	private void saveToRedis(){
+        List<TbTypeTemplate> templateList = findAll();
+        for (TbTypeTemplate template : templateList){
+            // 得到品牌列表
+            List<Map> brandList = JSON.parseArray(template.getBrandIds(), Map.class);
+            redisTemplate.boundHashOps("brandList").put(template.getId(), brandList);
+
+            // 得到规格列表
+            List<Map> specList = findSpecList(template.getId());
+            redisTemplate.boundHashOps("specList").put(template.getId(), specList);
+        }
+        System.out.println("缓存品牌列表");
+    }
 
     /**
      *
@@ -123,11 +147,14 @@ public class TypeTemplateServiceImpl implements TypeTemplateService {
      */
     @Override
     public List<Map> findSpecList(Long id) {
-        // 查询模板
+        // 根据模板ID查询到模板对象
         TbTypeTemplate typeTemplate = typeTemplateMapper.selectByPrimaryKey(id);
+        // 获得规格的数据spec_ids   在将数据转换成List<Map>
         List<Map> list = JSON.parseArray(typeTemplate.getSpecIds(), Map.class); // 把字符串转成Map泛型的List
+        // 获取每条记录
         for (Map map : list){
-            // 查询规格选项列表
+            // 根据规格的ID 查询规格的选项数据
+            // 设置查询条件
             TbSpecificationOptionExample example = new TbSpecificationOptionExample();
             TbSpecificationOptionExample.Criteria criteria = example.createCriteria();
             criteria.andSpecIdEqualTo(new Long((Integer)map.get("id")));
