@@ -171,7 +171,9 @@
             <div class="type-wrap">
                 <div class="fl key">商品分类</div>
                 <div class="fl value">
-                    <a href="#">手机</a> <a href="#">电视</a>
+                    <span ng-repeat="category in resultMap.categoryList">
+                         <a href="#" ng-click="addSearchItem('category',category)">{{category}}</a>
+                    </span>
                 </div>
                 <div class="fl ext"></div>
             </div>

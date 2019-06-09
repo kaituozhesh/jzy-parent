@@ -10,14 +10,15 @@ import java.util.Map;
 
 /**
  * @Auther: 林俊豪
- * @Date: 2019/6/9
+ * @Date: 2019/4/15
  */
 @RestController
-@RequestMapping("/itemSearch")
+@RequestMapping("/itemsearch")
 public class ItemSearchController {
 
     @Reference
     private ItemSearchService itemSearchService;
+
 
     @RequestMapping("/search")
     public Map search(@RequestBody Map searchMap){

@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4c89ff-3b3a-47df-aa13-b215018faf88" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/jzy-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-content-interface/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-content-interface/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-content-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-content-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-dao/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-dao/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-manager-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-manager-web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-pojo/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-pojo/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-portal-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-portal-web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-interface/src/main/java/cn/jzy/search/service/ItemSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-interface/src/main/java/cn/jzy/search/service/ItemSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-interface/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-interface/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-search-service/src/main/java/cn/jzy/search/service/impl/ItemSearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-service/src/main/java/cn/jzy/search/service/impl/ItemSearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/src/main/java/cn/jzy/search/controller/ItemSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/src/main/java/cn/jzy/search/controller/ItemSearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/src/main/resources/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/src/main/resources/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/controller/searchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/controller/searchController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/service/searchService.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/service/searchService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jzy-search-web/src/main/webapp/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/src/main/webapp/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/target/classes/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/target/classes/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/target/jzy-search-web-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/target/jzy-search-web-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/target/jzy-search-web-1.0-SNAPSHOT/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/target/jzy-search-web-1.0-SNAPSHOT/js/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/target/jzy-search-web-1.0-SNAPSHOT/js/controller/searchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/target/jzy-search-web-1.0-SNAPSHOT/js/controller/searchController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/target/jzy-search-web-1.0-SNAPSHOT/js/service/searchService.js" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/target/jzy-search-web-1.0-SNAPSHOT/js/service/searchService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/target/jzy-search-web-1.0-SNAPSHOT/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/target/jzy-search-web-1.0-SNAPSHOT/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-search-web/target/tomcat/logs/access_log.2019-06-09" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-search-web/target/tomcat/logs/access_log.2019-06-09" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-interface/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-interface/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-sellergoods-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-sellergoods-service/target/tomcat/logs/access_log.2019-06-09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-shop-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-shop-web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jzy-solr-util/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jzy-solr-util/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,32 +61,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jzy-search-service/src/main/java/cn/jzy/search/service/impl/ItemSearchServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-807">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/webapp/search.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/java/cn/jzy/search/controller/ItemSearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="370" selection-start-line="370" selection-end-line="370" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/base.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="120">
+              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -91,7 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/ItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SpecificationOptionServiceImpl.java" />
         <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/SpecificationServiceImpl.java" />
         <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/java/cn/jzy/sellergoods/service/impl/TypeTemplateServiceImpl.java" />
@@ -123,25 +141,26 @@
         <option value="$PROJECT_DIR$/jzy-solr-util/pom.xml" />
         <option value="$PROJECT_DIR$/jzy-solr-util/src/main/java/cn/jzy/solrutil/SolrUtil.java" />
         <option value="$PROJECT_DIR$/jzy-search-interface/pom.xml" />
-        <option value="$PROJECT_DIR$/jzy-search-service/pom.xml" />
         <option value="$PROJECT_DIR$/jzy-search-interface/src/main/java/cn/jzy/search/service/ItemSearchService.java" />
         <option value="$PROJECT_DIR$/jzy-portal-web/pom.xml" />
-        <option value="$PROJECT_DIR$/jzy-search-web/pom.xml" />
         <option value="$PROJECT_DIR$/jzy-search-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/service/searchService.js" />
-        <option value="$PROJECT_DIR$/jzy-search-service/src/main/resources/spring/applicationContext-service.xml" />
         <option value="$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/jzy-shop-web/src/main/resources/spring/spring-security.xml" />
         <option value="$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-service.xml" />
-        <option value="$PROJECT_DIR$/jzy-search-web/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/jzy-portal-web/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/jzy-manager-web/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/jzy-content-service/src/main/resources/spring/applicationContext-service.xml" />
-        <option value="$PROJECT_DIR$/jzy-search-web/src/main/java/cn/jzy/search/controller/ItemSearchController.java" />
-        <option value="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/controller/searchController.js" />
         <option value="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/base.js" />
         <option value="$PROJECT_DIR$/jzy-search-web/src/main/webapp/search.html" />
+        <option value="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/service/searchService.js" />
+        <option value="$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/controller/searchController.js" />
+        <option value="$PROJECT_DIR$/jzy-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/jzy-search-service/src/main/java/cn/jzy/search/service/impl/itemDeleteListener.java" />
+        <option value="$PROJECT_DIR$/jzy-search-service/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/jzy-search-web/pom.xml" />
+        <option value="$PROJECT_DIR$/jzy-search-web/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/jzy-search-service/src/main/java/cn/jzy/search/service/impl/ItemSearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/jzy-search-web/src/main/java/cn/jzy/search/controller/ItemSearchController.java" />
       </list>
     </option>
   </component>
@@ -176,9 +195,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="835" />
-    <option name="width" value="1342" />
-    <option name="height" value="1087" />
+    <option name="x" value="796" />
+    <option name="y" value="24" />
+    <option name="width" value="1441" />
+    <option name="height" value="1033" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -186,7 +206,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,25 +217,25 @@
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-search-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-search-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-search-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-search-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -223,29 +243,11 @@
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-search-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-search-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-search-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="jzy-search-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -264,18 +266,38 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-search-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jzy-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jzy-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="jzy-search-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560070148926" />
-    <property name="last_opened_file_path" value="D:/temp/poject/JZY/jzy-parent" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560085928355" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jzy-parent" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -285,13 +307,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\JZY\jzy-parent\jzy-search-web\src\main\webapp\js" />
-      <recent name="D:\project\JZY\jzy-parent\jzy-search-web\src\main\webapp\plugins" />
+      <recent name="D:\project\JZY\jzy-parent\jzy-search-web\src\main\webapp\js\service" />
+      <recent name="D:\project\JZY\jzy-parent\jzy-search-web\src\main\webapp\js\controller" />
       <recent name="D:\project\JZY\jzy-parent\jzy-search-web\src\main\webapp" />
+      <recent name="D:\project\JZY\jzy-parent\jzy-search-web\src\main\webapp\js" />
       <recent name="D:\project\JZY\jzy-parent\jzy-search-web\src\main\resources" />
-      <recent name="D:\project\JZY\jzy-parent\jzy-search-web\src\main\webapp\WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.jzy.search.service" />
+      <recent name="cn.jzy.search.service.impl" />
+      <recent name="cn.jzy.search.controller" />
       <recent name="cn.jzy.manager.controller" />
       <recent name="cn.jzy.shop.controller" />
     </key>
@@ -534,18 +559,19 @@
       <workItem from="1559954555506" duration="22815000" />
       <workItem from="1559993857260" duration="12051000" />
       <workItem from="1560047357119" duration="7422000" />
-      <workItem from="1560067555175" duration="2567000" />
+      <workItem from="1560067555175" duration="4873000" />
+      <workItem from="1560074772118" duration="796000" />
+      <workItem from="1560076700314" duration="6347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105055000" />
+    <option name="totallyTimeSpent" value="114504000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="835" y="0" width="1342" height="1087" extended-state="0" />
-    <editor active="true" />
+    <frame x="796" y="24" width="1441" height="1033" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20124805" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19623461" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -555,7 +581,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.074273415" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14171429" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39872068" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -571,7 +597,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.13113007" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.20854454" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -617,34 +643,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jzy-content-interface/src/main/java/cn/jzy/content/service/ContentCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="387" column="28" selection-start-line="387" selection-start-column="28" selection-end-line="387" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/contentCategory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/js/controller/contentCategoryController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/webapp/admin/content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1580">
@@ -773,13 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-search-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="113" column="30" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jzy-search-service/src/main/resources/spring/applicationContext-tx.xml" />
     <entry file="file://$PROJECT_DIR$/jzy-portal-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -787,9 +778,6 @@
           <caret line="121" column="12" selection-start-line="24" selection-start-column="4" selection-end-line="121" selection-end-column="12" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/resources/config/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -841,23 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-search-service/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-search-service/src/main/resources/spring/applicationContext-solr.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/jzy-portal-web/src/main/resources/spring/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -873,55 +844,8 @@
         <state relative-caret-position="-271" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jzy-content-service/src/main/resources/spring/applicationContext-tx.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-content-service/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/service/searchService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/java/cn/jzy/search/controller/ItemSearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-search-interface/src/main/java/cn/jzy/search/service/ItemSearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jzy-search-interface/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -930,41 +854,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-search-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1960">
-          <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/controller/searchController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="40">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-content-service/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-manager-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-service/src/main/java/cn/jzy/search/service/impl/ItemSearchListener.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-service/src/main/resources/spring/applicationContext-jms-consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-service/src/main/java/cn/jzy/search/service/impl/itemDeleteListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="87" column="44" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/resources/config/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-service/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-service/src/main/resources/spring/applicationContext-solr.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-sellergoods-service/src/main/resources/spring/applicationContext-tx.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="127" column="37" selection-start-line="127" selection-start-column="37" selection-end-line="127" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-interface/src/main/java/cn/jzy/search/service/ItemSearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/webapp/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="370" selection-start-line="370" selection-end-line="370" />
+        <state relative-caret-position="171">
+          <caret line="154" column="44" lean-forward="true" selection-start-line="154" selection-start-column="44" selection-end-line="154" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/controller/searchController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/webapp/js/service/searchService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jzy-search-service/src/main/java/cn/jzy/search/service/impl/ItemSearchServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-807">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jzy-search-web/src/main/java/cn/jzy/search/controller/ItemSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1022,12 +1034,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>jzy-portal-web</last-edited>
+          <last-edited>Spring|jzy-search-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
