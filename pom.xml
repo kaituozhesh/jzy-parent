@@ -19,6 +19,9 @@
         <module>jzy-content-interface</module>
         <module>jzy-content-service</module>
         <module>jzy-portal-web</module>
+        <module>jzy-solr-util</module>
+        <module>jzy-search-interface</module>
+        <module>jzy-search-service</module>
     </modules>
 
     <!-- 集中定义依赖版本号 -->

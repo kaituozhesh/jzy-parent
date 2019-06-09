@@ -13,9 +13,12 @@
         <module name="jzy-manager-web" />
         <module name="jzy-pojo" />
         <module name="jzy-portal-web" />
+        <module name="jzy-search-interface" />
+        <module name="jzy-search-service" />
         <module name="jzy-sellergoods-interface" />
         <module name="jzy-sellergoods-service" />
         <module name="jzy-shop-web" />
+        <module name="jzy-solr-util" />
       </profile>
     </annotationProcessing>
   </component>
