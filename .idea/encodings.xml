@@ -3,6 +3,8 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/jzy-content-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jzy-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jzy-page-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jzy-page-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jzy-portal-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jzy-search-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jzy-search-web" charset="UTF-8" />

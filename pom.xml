@@ -23,6 +23,9 @@
         <module>jzy-search-interface</module>
         <module>jzy-search-service</module>
         <module>jzy-search-web</module>
+        <module>jzy-page-interface</module>
+        <module>jzy-page-service</module>
+        <module>jzy-page-web</module>
     </modules>
 
     <!-- 集中定义依赖版本号 -->
