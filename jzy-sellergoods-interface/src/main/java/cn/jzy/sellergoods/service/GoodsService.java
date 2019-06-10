@@ -1,6 +1,7 @@
 package cn.jzy.sellergoods.service;
 
 import cn.jzy.pojo.TbGoods;
+import cn.jzy.pojo.TbItem;
 import cn.jzy.pojogroup.Goods;
 import entity.PageResult;
 
@@ -68,5 +69,5 @@ public interface GoodsService {
      */
 	void updateStatus(Long[] ids, String status,boolean flag);
 
-
+    List<TbItem> findItemListByGoodsListAndStatus(Long[] goodsIds, String status);
 }

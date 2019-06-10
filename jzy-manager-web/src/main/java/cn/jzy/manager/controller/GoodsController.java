@@ -1,7 +1,9 @@
 package cn.jzy.manager.controller;
 
 import cn.jzy.pojo.TbGoods;
+import cn.jzy.pojo.TbItem;
 import cn.jzy.pojogroup.Goods;
+import cn.jzy.search.service.ItemSearchService;
 import cn.jzy.sellergoods.service.GoodsService;
 import com.alibaba.dubbo.config.annotation.Reference;
 import entity.PageResult;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -79,6 +82,10 @@ public class GoodsController {
 	public Result delete(Long [] ids){
 		try {
 			goodsService.delete(ids);
+
+			// 从索引库中删除
+            itemSearchService.deleteByGoodsIds(Arrays.asList(ids));
+
 			return new Result(true, "删除成功");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -97,11 +104,22 @@ public class GoodsController {
 		return goodsService.findPage(goods, page, rows);		
 	}
 
+	@Reference(timeout = 10000)
+	private ItemSearchService itemSearchService;
 
+    // false 修改审核状态
 	@RequestMapping("/updateStatus")
     public Result updateStatus(Long[] ids, String status) {
         try {
             goodsService.updateStatus(ids,status,false);
+            // 审核通过
+            if ("1".equals(status)) {
+                // 得到需要导入的SKU列表
+                List<TbItem> itemList = goodsService.findItemListByGoodsListAndStatus(ids, status);
+                // 导入到solr
+                itemSearchService.importList(itemList);
+
+            }
             return new Result(true,"成功");
         } catch (Exception e) {
             e.printStackTrace();
