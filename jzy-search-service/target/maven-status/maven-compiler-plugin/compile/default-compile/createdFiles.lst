@@ -1,1 +1,3 @@
+cn\jzy\search\service\impl\itemDeleteListener.class
 cn\jzy\search\service\impl\ItemSearchServiceImpl.class
+cn\jzy\search\service\impl\ItemSearchListener.class

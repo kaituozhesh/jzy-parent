@@ -1,20 +1,24 @@
 package cn.jzy.manager.controller;
 
-import cn.jzy.page.service.ItemPageService;
 import cn.jzy.pojo.TbGoods;
 import cn.jzy.pojo.TbItem;
 import cn.jzy.pojogroup.Goods;
-import cn.jzy.search.service.ItemSearchService;
 import cn.jzy.sellergoods.service.GoodsService;
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.alibaba.fastjson.JSON;
 import entity.PageResult;
 import entity.Result;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Session;
 import java.util.List;
 
 /**
@@ -74,20 +78,26 @@ public class GoodsController {
 	public Goods findOne(Long id){
 		return goodsService.findOne(id);		
 	}
-	
+
+	@Autowired
+	private Destination queueSolrDeleteDestination;
+    @Autowired
+	private Destination topicPageDeleteDestination;
 	/**
 	 * 批量删除
 	 * @param ids
 	 * @return
 	 */
 	@RequestMapping("/delete")
-	public Result delete(Long [] ids){
+	public Result delete(final Long [] ids){
 		try {
 			goodsService.delete(ids);
 
 			// 从索引库中删除
-            itemSearchService.deleteByGoodsIds(Arrays.asList(ids));
+            jmsTemplate.send(queueSolrDeleteDestination, session -> session.createObjectMessage(ids));
 
+            // 删除每个服务器上的商品详情页
+            jmsTemplate.send(topicPageDeleteDestination, session -> session.createObjectMessage(ids));
 			return new Result(true, "删除成功");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -106,9 +116,13 @@ public class GoodsController {
 		return goodsService.findPage(goods, page, rows);		
 	}
 
-	@Reference(timeout = 10000)
-	private ItemSearchService itemSearchService;
 
+	@Autowired
+	private JmsTemplate jmsTemplate;
+    @Autowired
+	private Destination queueSolrDestination;
+    @Autowired
+    private Destination topicPageDestination;
     // false 修改审核状态
 	@RequestMapping("/updateStatus")
     public Result updateStatus(Long[] ids, String status) {
@@ -119,12 +133,13 @@ public class GoodsController {
                 // 导入到索引库
                 // 得到需要导入的SKU列表
                 List<TbItem> itemList = goodsService.findItemListByGoodsListAndStatus(ids, status);
-                // 导入到solr
-                itemSearchService.importList(itemList);
+                // 转换为JSON传输 导入solr
+                final String jsonString = JSON.toJSONString(itemList);
+                jmsTemplate.send(queueSolrDestination, session -> session.createTextMessage(jsonString));
 
                 // 生成商品详细页
-                for (Long goodsId : ids){
-                    itemPageService.genItemHtml(goodsId);
+                for (final Long goodsId : ids){
+                    jmsTemplate.send(topicPageDestination, session -> session.createTextMessage(goodsId + ""));
                 }
             }
             return new Result(true,"成功");
@@ -133,12 +148,12 @@ public class GoodsController {
             return new Result(false, "失败");
         }
     }
-
+/*
     @Reference(timeout = 40000)
     private ItemPageService itemPageService;
 
     @RequestMapping("/genHtml")
     public void genHtml(Long goodsId){
         itemPageService.genItemHtml(goodsId);
-    }
+    }*/
 }

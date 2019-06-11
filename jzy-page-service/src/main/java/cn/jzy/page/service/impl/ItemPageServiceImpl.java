@@ -9,14 +9,14 @@ import cn.jzy.pojo.TbGoods;
 import cn.jzy.pojo.TbGoodsDesc;
 import cn.jzy.pojo.TbItem;
 import cn.jzy.pojo.TbItemExample;
-import com.alibaba.dubbo.config.annotation.Service;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
-import org.apache.solr.common.util.Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfig;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
 import java.util.HashMap;
@@ -84,6 +84,19 @@ public class ItemPageServiceImpl implements ItemPageService {
             out.close();
             return  true;
         } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    @Override
+    public boolean deleteItemHtml(Long[] goodsIds) {
+        try{
+            for (Long goodsId : goodsIds){
+                new File(pagedir + goodsId + ".html").delete();
+            }
+            return true;
+        }catch (Exception e){
             e.printStackTrace();
             return false;
         }
