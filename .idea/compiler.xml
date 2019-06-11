@@ -23,6 +23,9 @@
         <module name="jzy-sellergoods-service" />
         <module name="jzy-shop-web" />
         <module name="jzy-solr-util" />
+        <module name="jzy-user-interface" />
+        <module name="jzy-user-serivce" />
+        <module name="jzy-user-web" />
       </profile>
     </annotationProcessing>
   </component>

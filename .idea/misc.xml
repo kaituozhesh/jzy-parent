@@ -11,6 +11,8 @@
     <file type="web" url="file://$PROJECT_DIR$/jzy-search-web" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-sellergoods-service" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-shop-web" />
+    <file type="web" url="file://$PROJECT_DIR$/jzy-user-serivce" />
+    <file type="web" url="file://$PROJECT_DIR$/jzy-user-web" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

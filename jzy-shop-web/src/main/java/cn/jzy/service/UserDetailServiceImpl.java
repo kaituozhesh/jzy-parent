@@ -10,7 +10,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 /**
@@ -32,10 +31,13 @@ public class UserDetailServiceImpl implements UserDetailsService {
         // 构建一个角色列表
         List<GrantedAuthority> grantAuths = new ArrayList<>();
         grantAuths.add(new SimpleGrantedAuthority("ROLE_SELLER"));
+
         // 得到商家对象
         TbSeller seller = sellerService.findOne(username);
         if (seller != null) {
+            // 审核通过的用户才能登陆
             if (seller.getStatus().equals("1")) {
+                // 根据用户输入的密码  根 数据库中的对比   底层自己实现
                 return new User(username, seller.getPassword(), grantAuths);
             }
         }

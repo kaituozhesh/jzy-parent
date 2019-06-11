@@ -26,6 +26,9 @@
         <module>jzy-page-interface</module>
         <module>jzy-page-service</module>
         <module>jzy-page-web</module>
+        <module>jzy-user-interface</module>
+        <module>jzy-user-serivce</module>
+        <module>jzy-user-web</module>
     </modules>
 
     <!-- 集中定义依赖版本号 -->
