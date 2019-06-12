@@ -1,13 +1,17 @@
 cn\jzy\manager\controller\ContentController.class
+cn\jzy\manager\controller\GoodsController$4.class
 cn\jzy\manager\controller\SellerController.class
 cn\jzy\manager\controller\LoginController.class
+cn\jzy\manager\controller\GoodsController$3.class
 cn\jzy\manager\controller\BrandController.class
 cn\jzy\manager\controller\TypeTemplateController.class
+cn\jzy\manager\controller\GoodsController$2.class
 cn\jzy\manager\controller\ContentCategoryController.class
 cn\jzy\manager\controller\UploadController.class
 cn\jzy\manager\controller\SpecificationController.class
 cn\jzy\manager\controller\GoodsController.class
 cn\jzy\manager\controller\SpecificationOptionController.class
 cn\jzy\manager\controller\ItemCatController.class
+cn\jzy\manager\controller\GoodsController$1.class
 cn\jzy\manager\controller\ItemController.class
 cn\jzy\manager\controller\GoodsDescController.class

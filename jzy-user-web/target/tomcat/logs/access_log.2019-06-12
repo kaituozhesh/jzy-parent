@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [12/Jun/2019:18:41:40 +0800] "GET / HTTP/1.1" 304 - http-bio-9106-exec-2 58
+0:0:0:0:0:0:0:1 - - [12/Jun/2019:18:41:40 +0800] "GET /js/base.js HTTP/1.1" 304 - http-bio-9106-exec-3 1
+0:0:0:0:0:0:0:1 - - [12/Jun/2019:18:41:40 +0800] "GET /js/controller/userController.js HTTP/1.1" 304 - http-bio-9106-exec-5 14
+0:0:0:0:0:0:0:1 - - [12/Jun/2019:18:41:40 +0800] "GET /js/service/userService.js HTTP/1.1" 304 - http-bio-9106-exec-1 24
+0:0:0:0:0:0:0:1 - - [12/Jun/2019:18:41:40 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9106-exec-7 4
+0:0:0:0:0:0:0:1 - - [12/Jun/2019:18:42:35 +0800] "GET / HTTP/1.1" 304 - http-bio-9106-exec-2 43
+0:0:0:0:0:0:0:1 - - [12/Jun/2019:18:43:07 +0800] "GET /user/sendCode.do?phone=18042420261 HTTP/1.1" 200 51 http-bio-9106-exec-3 13641
+0:0:0:0:0:0:0:1 - - [12/Jun/2019:18:44:03 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9106-exec-2 41
+0:0:0:0:0:0:0:1 - - [12/Jun/2019:18:44:27 +0800] "GET /user/sendCode.do?phone=18042420261 HTTP/1.1" 200 50 http-bio-9106-exec-3 11143

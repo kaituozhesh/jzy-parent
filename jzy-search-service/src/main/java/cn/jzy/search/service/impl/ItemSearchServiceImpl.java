@@ -59,6 +59,7 @@ public class ItemSearchServiceImpl implements ItemSearchService {
 
         // 高亮选项初始化
         HighlightQuery query = new SimpleHighlightQuery();
+
         HighlightOptions highlightOptions = new HighlightOptions().addField("item_title");
         highlightOptions.setSimplePrefix("<em style = 'color:red'>");
         highlightOptions.setSimplePostfix("</em>");
@@ -66,9 +67,9 @@ public class ItemSearchServiceImpl implements ItemSearchService {
         // 为查询对象设置高亮选项
         query.setHighlightOptions(highlightOptions);
 
-            // 1.1 关键字查询
-            Criteria criteria = new Criteria("item_keywords").is(searchMap.get("keywords"));
-            query.addCriteria(criteria);
+        // 1.1 关键字查询
+        Criteria criteria = new Criteria("item_keywords").is(searchMap.get("keywords"));
+        query.addCriteria(criteria);
 
 
         // 1.2按照商品分类过滤

@@ -90,9 +90,9 @@ public class UserServiceImpl implements UserService {
     @Value("${sign_name}")
     private String sign_name;
     @Override
-    public void createSmsCode(String phone) {
+    public void createSmsCode(final String phone) {
         // 1. 生产一个六位验证码
-        String smscode = (long)(Math.random() * 900000 + 100000) + "";
+        final String smscode = (long)(Math.random() * 900000 + 100000) + "";
         System.out.println("验证码 : " + smscode);
         // 2. 将验证码放入缓存
         redisTemplate.boundHashOps("smscode").put(phone, smscode);

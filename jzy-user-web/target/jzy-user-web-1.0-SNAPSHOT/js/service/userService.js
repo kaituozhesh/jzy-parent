@@ -14,8 +14,8 @@ app.service('userService',function($http){
 		return $http.get('../user/findOne.do?id='+id);
 	}
 	//增加 
-	this.add=function(entity){
-		return  $http.post('../user/add.do',entity );
+	this.add=function(entity,smscode){
+		return  $http.post('../user/add.do?smscode='+smscode,entity );
 	}
 	//修改 
 	this.update=function(entity){
@@ -28,5 +28,10 @@ app.service('userService',function($http){
 	//搜索
 	this.search=function(page,rows,searchEntity){
 		return $http.post('../user/search.do?page='+page+"&rows="+rows, searchEntity);
-	}    	
+	}
+
+	// 发送验证码
+	this.sendCode = function (phone) {
+        return $http.get('/user/sendCode.do?phone=' + phone);
+    };
 });

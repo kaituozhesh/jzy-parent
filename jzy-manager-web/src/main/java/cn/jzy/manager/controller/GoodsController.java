@@ -94,11 +94,21 @@ public class GoodsController {
 			goodsService.delete(ids);
 
 			// 从索引库中删除
-            jmsTemplate.send(queueSolrDeleteDestination, session -> session.createObjectMessage(ids));
+            jmsTemplate.send(queueSolrDeleteDestination, new MessageCreator() {
+                @Override
+                public Message createMessage(Session session) throws JMSException {
+                    return session.createObjectMessage(ids);
+                }
+            });
+            // 删除每个服务器上的详情页
+            jmsTemplate.send(topicPageDeleteDestination, new MessageCreator() {
+                @Override
+                public Message createMessage(Session session) throws JMSException {
+                    return session.createObjectMessage(ids);
+                }
+            });
 
-            // 删除每个服务器上的商品详情页
-            jmsTemplate.send(topicPageDeleteDestination, session -> session.createObjectMessage(ids));
-			return new Result(true, "删除成功");
+            return new Result(true, "删除成功");
 		} catch (Exception e) {
 			e.printStackTrace();
 			return new Result(false, "删除失败");
@@ -135,11 +145,21 @@ public class GoodsController {
                 List<TbItem> itemList = goodsService.findItemListByGoodsListAndStatus(ids, status);
                 // 转换为JSON传输 导入solr
                 final String jsonString = JSON.toJSONString(itemList);
-                jmsTemplate.send(queueSolrDestination, session -> session.createTextMessage(jsonString));
+                jmsTemplate.send(queueSolrDestination,new MessageCreator() {
+                    @Override
+                    public Message createMessage(Session session) throws JMSException {
+                        return session.createTextMessage(jsonString);
+                    }
+                });
 
-                // 生成商品详细页
-                for (final Long goodsId : ids){
-                    jmsTemplate.send(topicPageDestination, session -> session.createTextMessage(goodsId + ""));
+                // ********生成商品详细页
+                for(final Long goodsId : ids){
+                    jmsTemplate.send(topicPageDestination, new MessageCreator() {
+                        @Override
+                        public Message createMessage(Session session) throws JMSException {
+                            return session.createTextMessage(goodsId + "");
+                        }
+                    });
                 }
             }
             return new Result(true,"成功");
