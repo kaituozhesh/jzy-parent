@@ -6,11 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.dubbo.config.annotation.Reference;
 import cn.jzy.pojo.TbUser;
-import cn.jzy.user.service.UserService;
+import cn.jzy.cart.service.UserService;
 
-import entity.PageResult;
 import entity.Result;
-import util.PhoneFormatCheckUtils;
 
 /**
  * controller

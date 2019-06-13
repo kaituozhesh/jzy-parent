@@ -41,12 +41,12 @@
     </authentication-manager>
 
     <!-- 认证类 -->
-    <beans:bean id="userDetailService" class="cn.jzy.service.UserDetailServiceImpl">
+    <beans:bean id="userDetailService" class="cn.jzy.UserDetailServiceImpl">
         <beans:property name="sellerService" ref="sellerService"></beans:property>
     </beans:bean>
 
     <dubbo:application name="jzy-shop-web" />
-    <dubbo:registry address="zookeeper://192.168.25.135:2181"/>
+    <dubbo:registry address="zookeeper://192.168.25.136:2181"/>
     <!-- 通过接口去注册中心抓 实现类 -->
     <dubbo:reference id="sellerService" interface="cn.jzy.sellergoods.service.SellerService"></dubbo:reference>
 

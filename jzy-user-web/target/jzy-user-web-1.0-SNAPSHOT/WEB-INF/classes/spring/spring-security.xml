@@ -61,7 +61,7 @@
         <beans:property name="key" value="an_id_for_this_auth_provider_only"/> 
     </beans:bean>        
    		 <!-- 认证类 -->
-	<beans:bean id="userDetailsService" class="cn.jzy.user.service.UserDetailServiceImpl"/>
+	<beans:bean id="userDetailsService" class="cn.jzy.cart.service.UserDetailServiceImpl"/>
 	
 	<!-- 认证过滤器 结束 -->
 	
@@ -69,7 +69,7 @@
 	<!-- 单点登出  开始  -->     
     <beans:bean id="singleLogoutFilter" class="org.jasig.cas.client.session.SingleSignOutFilter"/>          
     <beans:bean id="requestSingleLogoutFilter" class="org.springframework.security.web.authentication.logout.LogoutFilter">  
-        <beans:constructor-arg value="http://localhost:9100/cas/logout?service=http://localhost:9003/index2.html/"/>
+        <beans:constructor-arg value="http://localhost:9100/cas/logout?service=http://localhost:9103/index2.html/"/>
         <beans:constructor-arg>  
             <beans:bean class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler"/>  
         </beans:constructor-arg>  

@@ -96,6 +96,7 @@ cn\jzy\pojo\TbSpecificationExample.class
 cn\jzy\pojo\TbGoodsDescExample$GeneratedCriteria.class
 cn\jzy\pojo\TbAreas.class
 cn\jzy\pojo\TbItemExample$Criterion.class
+cn\jzy\pojogroup\Cart.class
 cn\jzy\pojo\TbTypeTemplateExample$Criteria.class
 cn\jzy\pojo\TbOrderExample$GeneratedCriteria.class
 cn\jzy\pojo\TbOrderExample.class

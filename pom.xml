@@ -29,6 +29,9 @@
         <module>jzy-user-interface</module>
         <module>jzy-user-serivce</module>
         <module>jzy-user-web</module>
+        <module>jzy-cart-interface</module>
+        <module>jzy-cart-service</module>
+        <module>jzy-cart-web</module>
     </modules>
 
     <!-- 集中定义依赖版本号 -->

@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="jzy-cart-interface" />
+        <module name="jzy-cart-service" />
+        <module name="jzy-cart-web" />
         <module name="jzy-common" />
         <module name="jzy-content-interface" />
         <module name="jzy-content-service" />
