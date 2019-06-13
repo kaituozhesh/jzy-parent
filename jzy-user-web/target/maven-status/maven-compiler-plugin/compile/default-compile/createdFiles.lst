@@ -1,1 +1,3 @@
+cn\jzy\user\controller\LoginController.class
+cn\jzy\user\service\UserDetailServiceImpl.class
 cn\jzy\user\controller\UserController.class

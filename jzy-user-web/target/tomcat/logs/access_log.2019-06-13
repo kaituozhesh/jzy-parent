@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [13/Jun/2019:11:47:30 +0800] "GET / HTTP/1.1" 302 - http-bio-9106-exec-1 194
+0:0:0:0:0:0:0:1 - - [13/Jun/2019:11:47:31 +0800] "GET /login/cas?ticket=ST-3-HnGC2cNbbojIgnasL3qR-cas01.example.org HTTP/1.1" 302 - http-bio-9106-exec-3 67
+0:0:0:0:0:0:0:1 - - [13/Jun/2019:11:47:31 +0800] "GET / HTTP/1.1" 200 29791 http-bio-9106-exec-4 14
+0:0:0:0:0:0:0:1 - - [13/Jun/2019:11:47:31 +0800] "GET /fonts//icon-pc.woff?59lb71 HTTP/1.1" 404 989 http-bio-9106-exec-2 3
+0:0:0:0:0:0:0:1 - - [13/Jun/2019:11:47:31 +0800] "GET /fonts//icon-pc.ttf?59lb71 HTTP/1.1" 404 987 http-bio-9106-exec-6 1
+0:0:0:0:0:0:0:1 - - [13/Jun/2019:11:47:35 +0800] "GET /logout/cas HTTP/1.1" 302 - http-bio-9106-exec-7 2
+127.0.0.1 - - [13/Jun/2019:11:47:35 +0800] "POST /login/cas HTTP/1.1" 200 - http-bio-9106-exec-10 5
+127.0.0.1 - - [13/Jun/2019:11:47:35 +0800] "POST /login/cas HTTP/1.1" 200 - http-bio-9106-exec-1 6
+127.0.0.1 - - [13/Jun/2019:11:47:35 +0800] "POST /login/cas HTTP/1.1" 200 - http-bio-9106-exec-9 2
+0:0:0:0:0:0:0:1 - - [13/Jun/2019:11:47:42 +0800] "GET /login/name.do HTTP/1.1" 302 - http-bio-9106-exec-5 10726
