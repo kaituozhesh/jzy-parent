@@ -28,7 +28,7 @@ public class CartServiceImpl implements CartService {
 
         // 1. 根据skuID查询商品明细SKU的对象
         TbItem item = itemMapper.selectByPrimaryKey(itemId);
-        // 商品ID 不存在
+        // 商品 不存在
         if (item == null) {
             throw new RuntimeException("商ping不存在");
         }

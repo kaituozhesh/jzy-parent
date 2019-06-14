@@ -14,9 +14,13 @@
         <module name="jzy-content-service" />
         <module name="jzy-dao" />
         <module name="jzy-manager-web" />
+        <module name="jzy-order-interface" />
+        <module name="jzy-order-service" />
         <module name="jzy-page-interface" />
         <module name="jzy-page-service" />
         <module name="jzy-page-web" />
+        <module name="jzy-pay-interface" />
+        <module name="jzy-pay-service" />
         <module name="jzy-pojo" />
         <module name="jzy-portal-web" />
         <module name="jzy-search-interface" />

@@ -32,6 +32,10 @@
         <module>jzy-cart-interface</module>
         <module>jzy-cart-service</module>
         <module>jzy-cart-web</module>
+        <module>jzy-order-interface</module>
+        <module>jzy-order-service</module>
+        <module>jzy-pay-interface</module>
+        <module>jzy-pay-service</module>
     </modules>
 
     <!-- 集中定义依赖版本号 -->

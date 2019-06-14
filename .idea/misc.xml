@@ -6,8 +6,10 @@
     <file type="web" url="file://$PROJECT_DIR$/jzy-cart-web" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-content-service" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/jzy-order-service" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-page-service" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-page-web" />
+    <file type="web" url="file://$PROJECT_DIR$/jzy-pay-service" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-search-service" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-search-web" />

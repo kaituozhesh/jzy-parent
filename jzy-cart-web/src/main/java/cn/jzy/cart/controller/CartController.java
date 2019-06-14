@@ -7,6 +7,7 @@ import com.alibaba.fastjson.JSON;
 import entity.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import util.CookieUtil;
@@ -67,10 +68,13 @@ public class CartController {
         }
     }
 
-
     @RequestMapping("/addGoodsToCartList")
+    // 参数一 : 哪个域允许访问我   参数二 :  是否允许携带凭证(如:cookie) 默认true  可以不写
+    @CrossOrigin(origins = "http://localhost:9105",allowCredentials = "true")// spring 4.2 +
     public Result addGoodsToCartList(Long itemId, Integer num){
-// 当前登陆人账号
+
+
+    // 当前登陆人账号
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
         System.out.println("当前登录人:" + name);
 
