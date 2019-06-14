@@ -9,6 +9,9 @@
     <http pattern="/plugins/**" security="none"></http>
 
     <http pattern="/cart.html" security="none"></http>
+    <!-- 以下两条只是为了测试方便 才放行的 -->
+    <http pattern="/*.html" security="none"></http>
+    <http pattern="/pay/*.do" security="none"></http>
 
 
 <!--    <http pattern="/*.html" security="none"></http>

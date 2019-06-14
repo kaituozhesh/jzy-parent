@@ -1,4 +1,5 @@
 cn\jzy\cart\service\UserDetailServiceImpl.class
 cn\jzy\cart\controller\CartController.class
+cn\jzy\cart\controller\PayController.class
 cn\jzy\cart\controller\AddressController.class
 cn\jzy\cart\controller\OrderController.class

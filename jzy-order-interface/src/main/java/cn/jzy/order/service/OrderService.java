@@ -1,6 +1,7 @@
 package cn.jzy.order.service;
 
 import cn.jzy.pojo.TbOrder;
+import cn.jzy.pojo.TbPayLog;
 import entity.PageResult;
 
 import java.util.List;
@@ -59,5 +60,19 @@ public interface OrderService {
 	 * @return
 	 */
 	public PageResult findPage(TbOrder order, int pageNum, int pageSize);
+
+    /**
+     *  根据用户ID 获取支付日志
+     * @param userId
+     * @return
+     */
+	TbPayLog searchPayLogFromRedis(String userId);
+
+    /**
+     *  支付成功 修改状态
+     * @param out_trade_no
+     * @param transaction_id
+     */
+	void updateOrderStatus(String out_trade_no, String transaction_id);
 	
 }
