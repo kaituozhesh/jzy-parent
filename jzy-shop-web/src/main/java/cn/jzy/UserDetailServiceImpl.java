@@ -1,4 +1,4 @@
-package cn.jzy.cart.service;
+package cn.jzy;
 
 import cn.jzy.pojo.TbSeller;
 import cn.jzy.sellergoods.service.SellerService;

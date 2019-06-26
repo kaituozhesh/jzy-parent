@@ -20,7 +20,7 @@ import java.util.Map;
  * @Auther: 林俊豪
  * @Date: 2019/6/9
  */
-@Service(timeout = 5000)
+@Service(timeout = 10000)
 public class ItemSearchServiceImpl implements ItemSearchService {
 
     @Autowired

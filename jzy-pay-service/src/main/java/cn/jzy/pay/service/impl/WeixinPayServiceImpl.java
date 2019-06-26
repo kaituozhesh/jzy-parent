@@ -22,15 +22,17 @@ public class WeixinPayServiceImpl implements WeixinPayService {
     private String partner;
     @Value("${partnerkey}")
     private String partnerkey;
+
+
     @Override
     public Map createNative(String out_trade_no, String total_fee) {
 
         // 1. 参数封装
         Map param = new HashMap();
         // 公众账号ID  **appid
-        param.put("appid", "wxab8acb865bb1637e");
+        param.put("appid", appid);
         // 商务号 ** partner
-        param.put("mch_id", "11473623");
+        param.put("mch_id", partner);
         // 随机字符串
         param.put("nonce_str", WXPayUtil.generateNonceStr());
         // 商品描述
@@ -48,7 +50,7 @@ public class WeixinPayServiceImpl implements WeixinPayService {
 
         try {
             // ** partnerkey
-            String paramXml = WXPayUtil.generateSignedXml(param, "2ab9071b06b9f739b950950ddb41db2690d");
+            String paramXml = WXPayUtil.generateSignedXml(param, partnerkey);
             System.out.println("请求的参数 : " + paramXml);
 
             // 2. 发送请求
@@ -61,7 +63,7 @@ public class WeixinPayServiceImpl implements WeixinPayService {
             String xmlResult = httpClient.getContent();
             Map<String, String> mapResult = WXPayUtil.xmlToMap(xmlResult);
 
-            System.out.println("微信返回结果" + mapResult);
+            System.out.println("微信返回结果 : " + mapResult);
 
             Map map = new HashMap<>();
             // 生成支付二维码的链接

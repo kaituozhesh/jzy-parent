@@ -1,4 +1,4 @@
-package cn.jzy.user.service.controller;
+package cn.jzy.user.controller;
 
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestMapping;

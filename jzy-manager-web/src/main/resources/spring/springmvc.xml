@@ -31,7 +31,7 @@
     </bean>
 	<!-- 引用dubbo 服务 -->
 	<dubbo:application name="jzy-manager-web" />
-	<dubbo:registry address="zookeeper://192.168.25.136:2181"/>
+	<dubbo:registry address="zookeeper://192.168.25.128:2181"/>
 	<dubbo:annotation package="cn.jzy.manager.controller" />
 
 </beans>

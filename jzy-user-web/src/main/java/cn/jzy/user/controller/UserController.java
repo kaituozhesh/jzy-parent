@@ -1,4 +1,4 @@
-package cn.jzy.user.service.controller;
+package cn.jzy.user.controller;
 import java.util.List;
 
 import cn.jzy.user.service.UserService;

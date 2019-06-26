@@ -25,7 +25,7 @@
             <frame-options policy="SAMEORIGIN"/>
         </headers>
         <!-- logout-success-url=""  退出之后跳哪个页面   默认登陆页 -->
-        <logout />
+        <logout invalidate-session="true"/>
     </http>
 
     <!-- 认证管理器 -->

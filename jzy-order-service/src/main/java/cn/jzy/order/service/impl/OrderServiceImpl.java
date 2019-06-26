@@ -104,9 +104,10 @@ public class OrderServiceImpl implements OrderService {
             orderIdList.add(orderId + "");
             total_money += money;
         }
-
+		System.out.println("支付类型" + order.getPaymentType());
         // 在订单生成的时候  添加支付日志   并且支付类型为1     1 为 微信支付
         if ("1".equals(order.getPaymentType())) {
+			System.out.println("添加日志");
             TbPayLog payLog = new TbPayLog();
             // 支付订单号
             payLog.setOutTradeNo(idWorker.nextId() + "");
@@ -121,8 +122,10 @@ public class OrderServiceImpl implements OrderService {
             payLog.setTradeState("0");
             // 支付类型  1 为微信 2 为 货到付款
             payLog.setPayType("1");
-            payLogMapper.insert(payLog);
-            // 放入缓存
+			System.out.println("PayLog : " + payLog);
+			int insert = payLogMapper.insert(payLog);
+			System.out.println("INSERT : " + insert);
+			// 放入缓存
             redisTemplate.boundHashOps("payLog").put(order.getUserId(), payLog);
         }
 

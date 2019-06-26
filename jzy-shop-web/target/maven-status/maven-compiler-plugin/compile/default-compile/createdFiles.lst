@@ -1,7 +1,7 @@
-cn\jzy\cart\service\UserDetailServiceImpl.class
 cn\jzy\shop\controller\SellerController.class
 cn\jzy\shop\controller\GoodsController.class
 cn\jzy\shop\controller\UploadController.class
 cn\jzy\shop\controller\LoginController.class
 cn\jzy\shop\controller\ItemCatController.class
 cn\jzy\shop\controller\TypeTemplateController.class
+cn\jzy\UserDetailServiceImpl.class

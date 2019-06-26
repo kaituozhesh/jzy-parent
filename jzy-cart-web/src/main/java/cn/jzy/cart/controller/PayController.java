@@ -34,6 +34,7 @@ public class PayController {
         TbPayLog payLog = orderService.searchPayLogFromRedis(username);
         // 3. 调用微信支付接口
         if (payLog != null) {
+            System.out.println("进入   ");
             return weixinPayService.createNative(payLog.getOutTradeNo(), payLog.getTotalFee() + "");
         } else {
             return new HashMap<>();
@@ -52,6 +53,7 @@ public class PayController {
                 break;
             }
             // 支付成功
+            System.out.println("TRADE_STATU : " + map.get("trade_state"));
             if (map.get("trade_state").equals("SUCCESS")) {
                 result = new Result(true, "支付成功");
                 // 修改订单状态
