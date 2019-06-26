@@ -6,6 +6,7 @@ cn\jzy\mapper\TbSellerMapper.class
 cn\jzy\mapper\TbCitiesMapper.class
 cn\jzy\mapper\TbTypeTemplateMapper.class
 cn\jzy\mapper\TbBrandMapper.class
+cn\jzy\mapper\TbSeckillOrderMapper.class
 cn\jzy\mapper\TbContentMapper.class
 cn\jzy\mapper\TbOrderItemMapper.class
 cn\jzy\mapper\TbProvincesMapper.class
@@ -15,6 +16,7 @@ cn\jzy\mapper\TbGoodsDescMapper.class
 cn\jzy\mapper\TbSpecificationMapper.class
 cn\jzy\mapper\TbGoodsMapper.class
 cn\jzy\mapper\TbItemCatMapper.class
+cn\jzy\mapper\TbSeckillGoodsMapper.class
 cn\jzy\mapper\TbUserMapper.class
 cn\jzy\mapper\TbItemMapper.class
 cn\jzy\mapper\TbOrderMapper.class

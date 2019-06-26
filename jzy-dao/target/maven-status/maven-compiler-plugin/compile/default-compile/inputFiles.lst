@@ -5,6 +5,7 @@ D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbOrderMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbAddressMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbContentMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbGoodsMapper.java
+D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbSeckillGoodsMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbSpecificationMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbBrandMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbOrderItemMapper.java
@@ -13,6 +14,7 @@ D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbProvincesMapper.
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbPayLogMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbSpecificationOptionMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbContentCategoryMapper.java
+D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbSeckillOrderMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbItemCatMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbCitiesMapper.java
 D:\project\JZY\jzy-parent\jzy-dao\src\main\java\cn\jzy\mapper\TbFreightTemplateMapper.java

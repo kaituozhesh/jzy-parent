@@ -11,5 +11,12 @@
 
     <artifactId>jzy-seckill-interface</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>cn.jzy</groupId>
+            <artifactId>jzy-pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

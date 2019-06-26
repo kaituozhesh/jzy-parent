@@ -27,6 +27,8 @@
         <module name="jzy-search-service" />
         <module name="jzy-search-web" />
         <module name="jzy-seckill-interface" />
+        <module name="jzy-seckill-service" />
+        <module name="jzy-seckill-web" />
         <module name="jzy-sellergoods-interface" />
         <module name="jzy-sellergoods-service" />
         <module name="jzy-shop-web" />
