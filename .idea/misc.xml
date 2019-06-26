@@ -17,6 +17,7 @@
     <file type="web" url="file://$PROJECT_DIR$/jzy-seckill-web" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-sellergoods-service" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-shop-web" />
+    <file type="web" url="file://$PROJECT_DIR$/jzy-task-service" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-user-serivce" />
     <file type="web" url="file://$PROJECT_DIR$/jzy-user-web" />
   </component>

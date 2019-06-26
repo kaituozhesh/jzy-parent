@@ -39,6 +39,7 @@
         <module>jzy-seckill-interface</module>
         <module>jzy-seckill-service</module>
         <module>jzy-seckill-web</module>
+        <module>jzy-task-service</module>
     </modules>
 
     <!-- 集中定义依赖版本号 -->
