@@ -13,7 +13,7 @@
             http://www.springframework.org/schema/cache  
             http://www.springframework.org/schema/cache/spring-cache.xsd">  
   
-   <context:property-placeholder location="classpath*:properties/*.properties" />   
+
   
    <!-- redis 相关配置 --> 
    <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">  
@@ -22,11 +22,11 @@
      <property name="testOnBorrow" value="${redis.testOnBorrow}" />  <!-- 可用的连接对象 -->
    </bean>  
   
-   <bean id="JedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" 
+   <bean id="jeidsConnectionFactory_dev" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
        p:host-name="${redis.host}" p:port="${redis.port}" p:password="${redis.pass}" p:pool-config-ref="poolConfig"/>  
    
    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">  
-    	<property name="connectionFactory" ref="JedisConnectionFactory" />  
+    	<property name="connectionFactory" ref="jeidsConnectionFactory_pro" />
    </bean>  
       
 </beans>  

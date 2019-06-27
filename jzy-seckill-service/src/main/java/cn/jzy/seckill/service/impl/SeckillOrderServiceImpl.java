@@ -131,7 +131,7 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
 
     @Override
     public void submitOrder(Long seckillId, String userId) {
-//1.查询缓存中的商品
+        //1.查询缓存中的商品
         TbSeckillGoods seckillGoods = (TbSeckillGoods) redisTemplate.boundHashOps("seckillGoods").get(seckillId);
         if (seckillGoods == null) {
             throw new RuntimeException("商品不存在");

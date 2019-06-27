@@ -35,7 +35,16 @@
         <servlet-name>springmvc</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
+
+    <!-- 加载spring容器 -->
     <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:spring/applicationContext*.xml;classpath:spring/spring-security.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+   <!-- <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:spring/spring-security.xml</param-value>
     </context-param>
@@ -43,7 +52,7 @@
         <listener-class>
             org.springframework.web.context.ContextLoaderListener
         </listener-class>
-    </listener>
+    </listener>-->
 
     <!-- 请求/*的时候  都被过滤 拦截 -->
     <filter>

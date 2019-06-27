@@ -2,19 +2,15 @@ package cn.jzy.seckill.controller;
 
 
 import cn.jzy.pay.service.WeixinPayService;
-import cn.jzy.pojo.TbPayLog;
 import cn.jzy.pojo.TbSeckillOrder;
 import cn.jzy.seckill.service.SeckillOrderService;
 import com.alibaba.dubbo.config.annotation.Reference;
 import entity.Result;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.web.access.channel.InsecureChannelProcessor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
